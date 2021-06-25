@@ -7,10 +7,7 @@ import {
 } from "react-router-dom";
 import "./App.css";
 
-import Header from "./components/Header";
 import Home from "./screens/Home";
-import Blog from "./screens/Blog";
-import Portfolio from "./screens/Portfolio";
 
 function App() {
   return (
@@ -21,19 +18,8 @@ function App() {
             <Redirect to="/home" />
           </Route>
           <Route path="/home">
-            <Header />
-            <div style={{ paddingTop: 70 }} />
+            <div style={{ paddingTop: 20 }} />
             <Home />
-          </Route>
-          <Route path="/blog">
-            <Header />
-            <div style={{ paddingTop: 70 }} />
-            <Blog />
-          </Route>
-          <Route path="/portfolio">
-            <Header />
-            <div style={{ paddingTop: 70 }} />
-            <Portfolio />
           </Route>
         </Switch>
       </Router>
